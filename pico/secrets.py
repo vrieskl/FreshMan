@@ -1,0 +1,2 @@
+PASSWORD="1qazXCVBgt%$"
+SSID = "B24KML"
