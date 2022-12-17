@@ -1,6 +1,6 @@
-from DataSetDef import DataSet
 import csv
-from DataSetIoDef import DataSetIO
+from server.classes.DataSetDef import DataSet
+from server.classes.DataSetIoDef import DataSetIO
 
 
 class DataSetCsv(DataSetIO):

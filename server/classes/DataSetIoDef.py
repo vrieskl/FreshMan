@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from DataSetDef import DataSet
+from server.classes.DataSetDef import DataSet
 
 
 class DataSetIO(ABC):

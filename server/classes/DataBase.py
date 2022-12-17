@@ -1,9 +1,8 @@
 from abc import ABC, abstractmethod
-
-from DataSetDef import DataSet
 from typing import List, Dict, Tuple, Any
 import mysql.connector as mc
 import sqlite3
+from server.classes.DataSetDef import DataSet
 
 Parent = str
 Child = str

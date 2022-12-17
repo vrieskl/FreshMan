@@ -6,10 +6,11 @@ from time import sleep
 import time
 import network
 import secrets
+import ds18x20
 from lib.umqtt.simple import MQTTClient
 print('Start')
 # MQTT functions
-mqtt_server = 'broker.hivemq.com'
+mqtt_server = 'pi0-2w.fritz.box'
 client_id = 'bigles98765'
 topic_pub = b'costman.temp'
 
@@ -51,7 +52,7 @@ except OSError as e:
     reconnect()
 
 count = 0
-pause_seconds = 0.8
+pause_seconds = 1.8
 while True:
     ds_sensor.convert_temp()
     led.on()

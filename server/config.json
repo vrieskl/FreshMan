@@ -1,0 +1,8 @@
+{
+  "host": "pi0-2w.fritz.box",
+  "database": "pico_data",
+  "user_name": "adm",
+  "password_file_name" : "pw.txt",
+  "mqtt_port": "1883",
+  "mqtt_topic": "costman.temp"
+}

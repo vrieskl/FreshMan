@@ -1,4 +1,4 @@
-from DataBase import MySqlDb, DataBase
+from server.classes.DataBase import MySqlDb, DataBase
 
 sql_statement = \
     '''

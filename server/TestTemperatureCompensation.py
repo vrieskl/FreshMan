@@ -1,5 +1,5 @@
-from Temperature import Temperature
-from server.DataSetCsvDef import DataSetCsv
+from pico.Temperature import Temperature
+from server.classes.DataSetCsvDef import DataSetCsv
 
 reader = DataSetCsv('data/samples2.csv', ',', '\'')
 dataset = reader.read()

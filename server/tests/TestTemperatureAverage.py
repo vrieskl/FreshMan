@@ -1,5 +1,6 @@
 import unittest
-from TemperatureAverage import TemperatureAverage
+
+from pico.TemperatureAverage import TemperatureAverage
 
 
 class TestTemperatureAverage(unittest.TestCase):
@@ -32,10 +33,10 @@ class TestTemperatureAverage(unittest.TestCase):
 
     def test_much(self):
         temp_avg = TemperatureAverage(3)
-        for looper in range(0, 1000):
-            for counter in range(0, 2000):
-                temp_avg.add_get(counter + 0.132)
-        self.assertEqual(temp_avg.add_get(2000.132), (5997.396 / 3))
+        for looper in range(0, 100):
+            for counter in range(0, 20):
+                temp_avg.add_get(counter + 0.734)
+        self.assertEqual(round(temp_avg.add_get(2000.132), 2), 679.53)
 
 
 if __name__ == '__main__':
